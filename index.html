@@ -34,14 +34,23 @@
                   <li class="nav-item">
                     <a class="nav-link" href="/moncompte">Mon Compte</a>
                   </li>
-                  <li class="nav-item">
+                  <li class="nav-item" data-show="disconnected">
                     <a class="nav-link" href="/connexion">Connexion</a>
+                  </li>
+                  <li class="nav-item" data-show="connected">
+                    <button class="nav-link" id="signout-btn">Déconnexion</button>
                   </li>
                 </ul>
               </div>
             </div>
           </nav>
     </header>
+
+    <div class="text-center mt-5 mb-5" id="loading">
+      <div class="spinner-border" role="status">
+        <span class="sr-only"></span>
+      </div>
+    </div>
 
     <main id="main-page">
         <!-- Le contenu de la page sera injecté ici -->
@@ -66,6 +75,7 @@
       </div>
     </footer>
 
+    <script src="js/script.js"></script>
     <script type="module" src="Router/router.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
