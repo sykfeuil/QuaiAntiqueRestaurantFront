@@ -5,31 +5,31 @@
 </div>
 
 <div class="container">
-    <form>
+    <form id="formulaireInscription">
         <div class="mb-3">
             <label for="NomInput" class="form-label">Nom</label>
-            <input type="text" class="form-control" id="NomInput">
+            <input type="text" class="form-control" id="NomInput" name="nom">
             <div class="invalid-feedback">
                 Le nom est requis.
             </div>
         </div>
         <div class="mb-3">
             <label for="PrenomInput" class="form-label">Prénom</label>
-            <input type="text" class="form-control" id="PrenomInput">
+            <input type="text" class="form-control" id="PrenomInput" name="prenom">
             <div class="invalid-feedback">
                 Le prénom est requis.
             </div>
         </div>
         <div class="mb-3">
             <label for="EmailInput" class="form-label">Email</label>
-            <input type="email" class="form-control" id="EmailInput" placeholder="test@gmail.com">
+            <input type="email" class="form-control" id="EmailInput" placeholder="test@gmail.com" name="email">
             <div class="invalid-feedback">
                 Format d'email invalide.
             </div>
         </div>
         <div class="mb-3">
             <label for="PasswordInput" class="form-label">Mot de passe</label>
-            <input type="password" class="form-control" id="PasswordInput">
+            <input type="password" class="form-control" id="PasswordInput" name="mdp">
             <div class="invalid-feedback">
             Le mot de passe n'est pas assez robuste : Au moins 8 caractères, comprenant au moins 1 majuscule, 1 minuscule, 1 chiffre et 1 caractère spécial.
             </div>
@@ -48,7 +48,7 @@
             </div>
         </div>
         <div class="text-center mb-3">
-            <button id="btn-validation-inscription" type="submit" class="btn btn-primary">Inscription</button>
+            <button id="btn-validation-inscription" type="button" class="btn btn-primary">Inscription</button>
         </div>
         <div class="text-center">
             <a href="/connexion">Vous avez déjà un compte ? Connectez-vous ici !</a>
